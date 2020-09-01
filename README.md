@@ -5,6 +5,7 @@
 ## Introduction
 
 A Python example for using [Spectrico's car make and model classifier](http://spectrico.com/car-make-model-recognition.html). It consists of an object detector for finding the cars, and a classifier to recognize the makes and models of the detected cars. The object detector is an implementation of YOLOv3 (OpenCV DNN backend). It doesn't use GPU and one frame takes 1s to process on Intel Core i5-7600 CPU. YOLOv3 weights were downloaded from [YOLO website](https://pjreddie.com/darknet/yolo/). The classifier is based on MobileNet (TensorFlow backend). It takes 35 milliseconds on Intel Core i5-7600 CPU for single classification. It can be accelerated more by running on GPU and using batching.
+Here is a web demo to test the full version: [Vehicle Make and Model Recognition](http://spectrico.com/demo-car-mmr.html)
 
 ---
 ## Object Detection and Classification in images
